@@ -31,7 +31,7 @@ interface FormatDateOptions {
 ```ts
 // Example
 
-import { formatDate } from 'usual_fn';
+import { formatDate } from "usual_fn";
 
 const formattedDate = formatDate({
   data: new Date(),
@@ -49,8 +49,8 @@ console.log(formattedNow);
 
 Format the phone number with/without prefix
 
-**formatPhoneWithPrefixe(params: FormatPhone): string**
-**formatPhone(params: FormatPhone): string**
+> **formatPhoneWithPrefixe(params: FormatPhone): string**
+> **formatPhone(params: FormatPhone): string**
 
 ```ts
 interface FormatPhone {
@@ -61,13 +61,13 @@ interface FormatPhone {
 ```ts
 // Example
 
-import { formatPhone, formatPhoneWithPrefixe } from 'usual_fn';
+import { formatPhone, formatPhoneWithPrefixe } from "usual_fn";
 
 const formattedPhoneWithPrefix = formatPhoneWithPrefixe({
-  data: '22997000000',
+  data: "22997000000",
 });
 const formattedPhone = formatPhone({
-  data: '97000000',
+  data: "97000000",
 });
 
 console.log(formatedPhoneWithPrefix);
@@ -91,12 +91,12 @@ interface FormatPrice {
 ```ts
 // Example
 
-import { formatPrice } from 'usual_fn';
+import { formatPrice } from "usual_fn";
 
 const amount = formatPrice({
   amount: 10000000,
   currency: true,
-  device: 'F CFA',
+  device: "F CFA",
 });
 
 console.log(amount);
