@@ -17,6 +17,7 @@ npm i usual_fn
 ## **formatDate**
 
 Format the date in the local format of your choice
+
 **formatDate(options: FormatDateOptions): string**
 
 ```ts
@@ -49,8 +50,9 @@ console.log(formattedNow);
 
 Format the phone number with/without prefix
 
-> **formatPhoneWithPrefixe(params: FormatPhone): string**
-> **formatPhone(params: FormatPhone): string**
+**formatPhoneWithPrefixe(params: FormatPhone): string**
+
+**formatPhone(params: FormatPhone): string**
 
 ```ts
 interface FormatPhone {
