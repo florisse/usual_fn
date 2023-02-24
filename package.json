@@ -4,21 +4,20 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rimraf ./dist && tsc",
-    "build-dev": "rimraf ./dist && tsc -w",
+    "build": "rimraf ./dist && tsc && esbuild src/index.ts --bundle --outfile=dist/index.js --minify",
+    "build-dev": "rimraf ./dist && npm run build",
     "start": "nodemon dist/index.js",
     "dev": "npm-run-all --parallel build-dev start"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "typescript": "^4.6.3"
-  },
   "devDependencies": {
     "@types/node": "^17.0.23",
+    "esbuild": "^0.17.10",
     "nodemon": "^2.0.15",
     "npm-run-all": "^4.1.5",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "typescript": "^4.6.3"
   }
 }
